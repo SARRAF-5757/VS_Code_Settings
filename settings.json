@@ -1,0 +1,166 @@
+{ // cspell:disable
+//?--------------------APPEARANCE--------------------?//
+	//!Editor Settings
+	"editor.fontSize": 13.5,
+	"editor.fontFamily": "Monaspace Radon",
+	"editor.fontLigatures": true,
+	"editor.wordWrapColumn": 90, //wraps code after 90 characters
+	"editor.rulers": [90],
+	"editor.smoothScrolling": false,
+	"editor.minimap.autohide": true,
+	"editor.minimap.renderCharacters": false,
+	"editor.guides.bracketPairs": "active",
+	"editor.guides.bracketPairsHorizontal": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.multiCursorModifier": "ctrlCmd",
+	//"editor.accessibilitySupport": "off",
+	"editor.inlineSuggest.suppressSuggestions": true,
+
+	//!Workbench Appearance
+	"workbench.colorTheme": "Catppuccin Macchiato",
+	"workbench.iconTheme": "catppuccin-macchiato",
+	"workbench.productIconTheme": "material-product-icons",
+	"workbench.layoutControl.enabled": false, //to hide the top bar
+	"window.commandCenter": false, //to hide the other top bar
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.tree.enableStickyScroll": true,
+	"window.titleBarStyle": "custom",
+
+	//!Terminal Settings
+	"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+	"terminal.integrated.fontWeight": "bold",
+	"terminal.integrated.fontSize": 13,
+	"terminal.external.osxExec": "Warp.app",
+	"terminal.integrated.shell.osx": "zsh",
+
+	//!Sync between profiles
+	"workbench.settings.applyToAllProfiles": [
+		"workbench.colorCustomizations",
+		"workbench.colorTheme",
+		"workbench.iconTheme",
+		"workbench.productIconTheme",
+		"editor.fontFamily",
+		"editor.fontSize",
+		"editor.fontLigatures",
+		"editor.cursorSmoothCaretAnimation",
+		"window.titleBarStyle",
+		"editor.rulers",
+		"editor.wordWrapColumn",
+		"editor.minimap.autohide",
+		"editor.minimap.renderCharacters",
+		"workbench.tree.renderIndentGuides",
+		"workbench.tree.enableStickyScroll"
+	],
+
+//?--------------------EXTENSIONS--------------------?//
+
+	//!Dictionary
+	"cSpell.userWords": ["sarraf", "EECS"],
+
+	//!Formatting and Linting
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
+	"prettier.bracketSameLine": false, //TODO: check back later if formating's fucked up
+	"prettier.useTabs": true,
+	//"prettier.experimentalTernaries": true,
+	"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"better-comments.highlightPlainText": true,
+
+	//!Indent-coloring
+	"indentRainbow.lightIndicatorStyleLineWidth": 6,
+	"indentRainbow.indicatorStyle": "light",
+	"indentRainbow.colors": ["rgba(255,255,64,0.07)",
+							"rgba(127,255,127,0.07)", 
+							"rgba(255,127,255,0.07)", 
+							"rgba(79,236,236,0.07)"],
+
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+
+	//!Extra Theme Settings
+	"vscode_vibrancy.opacity": 0,
+	"synthwave84.brightness": 1,
+
+//?--------------------FUNCTIONALITY--------------------?//
+
+	//!File Handling
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 100,
+	"files.autoSaveWhenNoErrors": true,
+	"explorer.confirmDelete": false,
+
+	//!C/C++ Settings
+	/*"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		"editor.formatOnPaste": true
+	},*/
+	"C_Cpp.intelliSenseEngine": "disabled",
+	"C_Cpp.default.cppStandard": "c++17", //IntelliSense
+	"lldb.showDisassembly": "never",
+		"C_Cpp.autocompleteAddParentheses": true,
+	"C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+	"C_Cpp.inlayHints.parameterNames.enabled": true,
+	"C_Cpp.inlayHints.referenceOperator.enabled": true,
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+		//automatic configure on open
+	"cmake.configureOnOpen": true,
+	"makefile.configureOnOpen": true,
+
+	//!General
+	"breadcrumbs.enabled": false, //easier navigation
+	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
+	"security.workspace.trust.untrustedFiles": "open",
+	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
+	"arduino.path": "/Applications",
+	"workbench.colorCustomizations": {
+		"terminal.background": "#00000000"
+	},
+}
