@@ -1,5 +1,5 @@
 { // cspell:disable
-//?--------------------APPEARANCE--------------------?//
+//*--------------------APPEARANCE--------------------*//
 	//!Editor Settings
 	"editor.fontSize": 13.5,
 	"editor.fontFamily": "Monaspace Radon",
@@ -52,7 +52,7 @@
 		"workbench.tree.enableStickyScroll"
 	],
 
-//?--------------------EXTENSIONS--------------------?//
+//*--------------------EXTENSIONS--------------------*//
 
 	//!Dictionary
 	"cSpell.userWords": ["sarraf", "EECS"],
@@ -60,7 +60,6 @@
 	//!Formatting and Linting
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnPaste": true,
-	"prettier.bracketSameLine": false, //TODO: check back later if formating's fucked up
 	"prettier.useTabs": true,
 	//"prettier.experimentalTernaries": true,
 	"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
@@ -78,24 +77,6 @@
 							"rgba(79,236,236,0.07)"],
 
 	"better-comments.tags": [
-		{
-			"tag": "!",
-			"color": "#FF2D00",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "?",
-			"color": "#3498DB",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
 		{
 			"tag": "//",
 			"color": "#474747",
@@ -115,8 +96,26 @@
 			"italic": false
 		},
 		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": true,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#ff00f4",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
 			"tag": "*",
-			"color": "#98C379",
+			"color": "#00ffd2",
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -126,39 +125,47 @@
 	],
 
 	//!Extra Theme Settings
-	"vscode_vibrancy.opacity": 0,
+	"vscode_vibrancy.opacity": 1,
 	"synthwave84.brightness": 1,
 
-//?--------------------FUNCTIONALITY--------------------?//
+//*--------------------FUNCTIONALITY--------------------*//
 
 	//!File Handling
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 100,
 	"files.autoSaveWhenNoErrors": true,
 	"explorer.confirmDelete": false,
+	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
+	"projectManager.groupList": true,
+	"projectManager.showParentFolderInfoOnDuplicates": true,
 
 	//!C/C++ Settings
-	/*"[cpp]": {
-		"editor.defaultFormatter": "ms-vscode.cpptools",
-		"editor.formatOnPaste": true
-	},*/
-	"C_Cpp.intelliSenseEngine": "disabled",
+	"C_Cpp.intelliSenseEngine": "disabled", //disable intellisense for c++ and use clang
 	"C_Cpp.default.cppStandard": "c++17", //IntelliSense
-	"lldb.showDisassembly": "never",
-		"C_Cpp.autocompleteAddParentheses": true,
-	"C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
-	"C_Cpp.inlayHints.parameterNames.enabled": true,
-	"C_Cpp.inlayHints.referenceOperator.enabled": true,
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-		//automatic configure on open
 	"cmake.configureOnOpen": true,
 	"makefile.configureOnOpen": true,
+	//!C++ Code Formatting
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		"editor.formatOnPaste": true
+	},
+	"C_Cpp.formatting": "vcFormat",
+	"editor.tabSize": 4,
+	"C_Cpp.vcFormat.indent.preserveComments": true,
+	"C_Cpp.vcFormat.indent.preserveWithinParentheses": true,
+	"C_Cpp.vcFormat.newLine.beforeElse": false,
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+	"C_Cpp.vcFormat.space.betweenEmptyBraces": true,
+	"C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
+	"C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
+	"C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,	
 
 	//!General
 	"breadcrumbs.enabled": false, //easier navigation
 	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
 	"security.workspace.trust.untrustedFiles": "open",
-	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
 	"arduino.path": "/Applications",
 	"editor.accessibilitySupport": "off",
 	"workbench.colorCustomizations": {
