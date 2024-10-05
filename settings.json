@@ -1,11 +1,20 @@
-{// cspell:disable
-//*--------------------APPEARANCE--------------------*//
+{
+	// cspell:disable
+	//*--------------------APPEARANCE--------------------*//
 
 	//!Editor Settings
-	"editor.fontSize": 12.5,
-	//"editor.fontFamily": "JetbrainsMono Nerd Font Mono",
+	"editor.fontSize": 13,
+	//"editor.fontFamily": "CaskaydiaCove Nerd Font",
 	//"editor.fontFamily": "ComicShannsMono Nerd Font",
-	"editor.fontFamily": "Monaspace Radon",
+	"editor.fontFamily": "FiraCode Nerd Font",
+	//"editor.fontFamily": "Hack Nerd Font Mono",
+	//"editor.fontFamily": "Iosevka Nerd Font",
+	//"editor.fontFamily": "JetbrainsMono Nerd Font Mono",
+	//"editor.fontFamily": "Monaspace Argon",
+	//"editor.fontFamily": "Monaspace Krypton",
+	//"editor.fontFamily": "Monaspace Radon",
+	//"editor.fontFamily": "OpenDyslexicM Nerd Font Mono",
+
 	"editor.fontVariations": true,
 	"editor.inlineSuggest.fontFamily": "Monaspace Krypton",
 	"editor.fontLigatures": true,
@@ -20,7 +29,8 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.accessibilitySupport": "off",
 	"editor.inlineSuggest.suppressSuggestions": true,
-	"editor.tokenColorCustomizations": { //to disable italics
+	"editor.tokenColorCustomizations": {
+		//to disable italics
 		"textMateRules": [
 			{
 				"scope": ["comment", "punctuation.definition.comment"],
@@ -54,7 +64,7 @@
 	//!Sync between profiles
 	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations", "workbench.colorTheme", "workbench.iconTheme", "workbench.productIconTheme", "editor.fontFamily", "editor.fontSize", "editor.fontLigatures", "editor.cursorSmoothCaretAnimation", "window.titleBarStyle", "editor.rulers", "editor.wordWrapColumn", "editor.minimap.autohide", "editor.minimap.renderCharacters", "workbench.tree.renderIndentGuides", "workbench.tree.enableStickyScroll"],
 
-//*--------------------EXTENSIONS--------------------*//
+	//*--------------------EXTENSIONS--------------------*//
 
 	//!Dictionary
 	"cSpell.userWords": ["sarraf", "EECS"],
@@ -136,7 +146,7 @@
 	"vscode_vibrancy.opacity": 1,
 	"synthwave84.brightness": 1,
 
-//*--------------------FUNCTIONALITY--------------------*//
+	//*--------------------FUNCTIONALITY--------------------*//
 
 	//!File Handling
 	"files.autoSave": "afterDelay",
