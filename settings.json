@@ -12,6 +12,7 @@
 	"editor.fontVariations": true,
 	"editor.inlineSuggest.fontFamily": "Monaspace Krypton",
 	"editor.fontLigatures": true,
+	//"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'", //for Monaspace
 	"editor.wordWrapColumn": 90, //wraps code after 90 characters
 	"editor.rulers": [90],
 	"editor.smoothScrolling": false,
@@ -162,14 +163,14 @@
 	//*--------------------EXTENSIONS--------------------*//
 
 	//!Dictionary
-	"cSpell.userWords": ["sarraf", "EECS"],
+	"cSpell.userWords": ["EECS"],
 
 	//!Formatting and Linting
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.defaultFormatter": null, //"esbenp.prettier-vscode",
 	"editor.formatOnPaste": true,
-	"prettier.useTabs": true,
+	//"prettier.useTabs": true,
 	//"prettier.experimentalTernaries": true,
-	"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
+	//"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
@@ -266,20 +267,24 @@
 	//!C++ Code Formatting
 	"[cpp]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools",
-		"editor.formatOnPaste": true
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.autoIndent": "full",
 	},
 	"C_Cpp.formatting": "vcFormat",
 	"editor.tabSize": 4,
-	"C_Cpp.vcFormat.indent.preserveComments": true,
-	"C_Cpp.vcFormat.indent.preserveWithinParentheses": true,
-	"C_Cpp.vcFormat.newLine.beforeElse": false,
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
-	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine", 	//brace for function
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine", 	//brace for conditions
+	"C_Cpp.vcFormat.indent.braces": true,							//keep indent function	
+	"C_Cpp.vcFormat.indent.preserveWithinParentheses": true,		//keep indent parenthesis
+	"C_Cpp.vcFormat.newLine.beforeElse": false,						//keep } else {
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,//empty function{}
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,	//empty struct
+	"C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,//empty space between closings </
 	"C_Cpp.vcFormat.space.betweenEmptyBraces": true,
 	"C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
 	"C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
-	"C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
 
 	//!General
 	"breadcrumbs.enabled": false, //easier navigation
