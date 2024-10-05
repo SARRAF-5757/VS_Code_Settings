@@ -79,7 +79,7 @@
 	"better-comments.tags": [
 		{
 			"tag": "//",
-			"color": "#474747",
+			"color": "#474747",		//grey
 			"strikethrough": true,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -88,16 +88,16 @@
 		},
 		{
 			"tag": "todo",
-			"color": "#FF8C00",
+			"color": "#474747",
 			"strikethrough": false,
 			"underline": false,
-			"backgroundColor": "transparent",
+			"backgroundColor": "#ffe700",	//yellow highlight
 			"bold": false,
 			"italic": false
 		},
 		{
 			"tag": "!",
-			"color": "#FF2D00",
+			"color": "#ff2d00",		//red
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -106,7 +106,7 @@
 		},
 		{
 			"tag": "?",
-			"color": "#ff00f4",
+			"color": "#FF69B4",		//pink	
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -115,13 +115,22 @@
 		},
 		{
 			"tag": "*",
-			"color": "#00ffd2",
+			"color": "#00ffd2",		//cyan
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": false,
 			"italic": false
-		}
+		},
+		{
+			"tag": "#",
+			"color": "#00FFFF",		//blue
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
 	],
 
 	//!Extra Theme Settings
