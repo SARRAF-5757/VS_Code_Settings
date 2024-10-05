@@ -1,5 +1,6 @@
 { // cspell:disable
 //*--------------------APPEARANCE--------------------*//
+
 	//!Editor Settings
 	"editor.fontSize": 13.5,
 	"editor.fontFamily": "Monaspace Radon",
