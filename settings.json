@@ -20,7 +20,7 @@
 	"editor.guides.bracketPairs": "active",
 	"editor.guides.bracketPairsHorizontal": true,
 	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.multiCursorModifier": "alt",
 	"editor.accessibilitySupport": "off",
 	"editor.inlineSuggest.suppressSuggestions": true,
 	"editor.tokenColorCustomizations": { //to disable italics
@@ -195,7 +195,7 @@
 			"color": "#474747",
 			"strikethrough": false,
 			"underline": false,
-			"backgroundColor": "#ffe700AA", //yellow highlight
+			"backgroundColor": "#ff8C00", //yellow highlight
 			"bold": false,
 			"italic": false
 		},
