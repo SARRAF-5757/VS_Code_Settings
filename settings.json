@@ -160,6 +160,7 @@
 	"security.workspace.trust.untrustedFiles": "open",
 	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
 	"arduino.path": "/Applications",
+	"editor.accessibilitySupport": "off",
 	"workbench.colorCustomizations": {
 		"terminal.background": "#00000000"
 	},
