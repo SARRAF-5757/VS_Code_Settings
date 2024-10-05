@@ -26,6 +26,9 @@
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.tree.enableStickyScroll": true,
 	"window.titleBarStyle": "custom",
+	"workbench.colorCustomizations": {
+		"terminal.background": "#00000000"
+	},
 
 	//!Terminal Settings
 	"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
@@ -176,9 +179,6 @@
 	"breadcrumbs.enabled": false, //easier navigation
 	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
 	"security.workspace.trust.untrustedFiles": "open",
-	"arduino.path": "/Applications",
 	"editor.accessibilitySupport": "off",
-	"workbench.colorCustomizations": {
-		"terminal.background": "#00000000"
-	},
+	"arduino.path": "/Applications",
 }
