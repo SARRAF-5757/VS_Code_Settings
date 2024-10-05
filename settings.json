@@ -1,9 +1,13 @@
-{ // cspell:disable
+{// cspell:disable
 //*--------------------APPEARANCE--------------------*//
 
 	//!Editor Settings
-	"editor.fontSize": 13.5,
+	"editor.fontSize": 12.5,
+	//"editor.fontFamily": "JetbrainsMono Nerd Font Mono",
+	//"editor.fontFamily": "ComicShannsMono Nerd Font",
 	"editor.fontFamily": "Monaspace Radon",
+	"editor.fontVariations": true,
+	"editor.inlineSuggest.fontFamily": "Monaspace Krypton",
 	"editor.fontLigatures": true,
 	"editor.wordWrapColumn": 90, //wraps code after 90 characters
 	"editor.rulers": [90],
@@ -16,10 +20,20 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.accessibilitySupport": "off",
 	"editor.inlineSuggest.suppressSuggestions": true,
+	"editor.tokenColorCustomizations": { //to disable italics
+		"textMateRules": [
+			{
+				"scope": ["comment", "punctuation.definition.comment"],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
 
 	//!Workbench Appearance
-	"workbench.colorTheme": "Catppuccin Macchiato",
-	"workbench.iconTheme": "catppuccin-macchiato",
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"workbench.iconTheme": "catppuccin-mocha",
 	"workbench.productIconTheme": "material-product-icons",
 	"workbench.layoutControl.enabled": false, //to hide the top bar
 	"window.commandCenter": false, //to hide the other top bar
@@ -38,23 +52,7 @@
 	"terminal.integrated.shell.osx": "zsh",
 
 	//!Sync between profiles
-	"workbench.settings.applyToAllProfiles": [
-		"workbench.colorCustomizations",
-		"workbench.colorTheme",
-		"workbench.iconTheme",
-		"workbench.productIconTheme",
-		"editor.fontFamily",
-		"editor.fontSize",
-		"editor.fontLigatures",
-		"editor.cursorSmoothCaretAnimation",
-		"window.titleBarStyle",
-		"editor.rulers",
-		"editor.wordWrapColumn",
-		"editor.minimap.autohide",
-		"editor.minimap.renderCharacters",
-		"workbench.tree.renderIndentGuides",
-		"workbench.tree.enableStickyScroll"
-	],
+	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations", "workbench.colorTheme", "workbench.iconTheme", "workbench.productIconTheme", "editor.fontFamily", "editor.fontSize", "editor.fontLigatures", "editor.cursorSmoothCaretAnimation", "window.titleBarStyle", "editor.rulers", "editor.wordWrapColumn", "editor.minimap.autohide", "editor.minimap.renderCharacters", "workbench.tree.renderIndentGuides", "workbench.tree.enableStickyScroll"],
 
 //*--------------------EXTENSIONS--------------------*//
 
@@ -75,15 +73,12 @@
 	//!Indent-coloring
 	"indentRainbow.lightIndicatorStyleLineWidth": 6,
 	"indentRainbow.indicatorStyle": "light",
-	"indentRainbow.colors": ["rgba(255,255,64,0.07)",
-							"rgba(127,255,127,0.07)", 
-							"rgba(255,127,255,0.07)", 
-							"rgba(79,236,236,0.07)"],
+	"indentRainbow.colors": ["rgba(255,255,64,0.07)", "rgba(127,255,127,0.07)", "rgba(255,127,255,0.07)", "rgba(79,236,236,0.07)"],
 
 	"better-comments.tags": [
 		{
 			"tag": "//",
-			"color": "#474747",		//grey
+			"color": "#474747", //grey
 			"strikethrough": true,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -95,13 +90,13 @@
 			"color": "#474747",
 			"strikethrough": false,
 			"underline": false,
-			"backgroundColor": "#ffe700",	//yellow highlight
+			"backgroundColor": "#ffe700AA", //yellow highlight
 			"bold": false,
 			"italic": false
 		},
 		{
 			"tag": "!",
-			"color": "#ff2d00",		//red
+			"color": "#ff2d00", //red
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -110,7 +105,7 @@
 		},
 		{
 			"tag": "?",
-			"color": "#FF69B4",		//pink	
+			"color": "#FF69B4", //pink
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -119,7 +114,7 @@
 		},
 		{
 			"tag": "*",
-			"color": "#00ffd2",		//cyan
+			"color": "#00ffd2", //cyan
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
@@ -128,13 +123,13 @@
 		},
 		{
 			"tag": "#",
-			"color": "#00FFFF",		//blue
+			"color": "#00FFFF", //blue
 			"strikethrough": false,
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": false,
 			"italic": false
-		},
+		}
 	],
 
 	//!Extra Theme Settings
@@ -173,11 +168,11 @@
 	"C_Cpp.vcFormat.space.betweenEmptyBraces": true,
 	"C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
 	"C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
-	"C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,	
+	"C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
 
 	//!General
 	"breadcrumbs.enabled": false, //easier navigation
 	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
 	"security.workspace.trust.untrustedFiles": "open",
-	"arduino.path": "/Applications",
+	"arduino.path": "/Applications"
 }
