@@ -3,17 +3,11 @@
 	//*--------------------APPEARANCE--------------------*//
 
 	//!Editor Settings
-	"editor.fontSize": 13,
-	//"editor.fontFamily": "CaskaydiaCove Nerd Font",
+	"editor.fontSize": 14,
+	"editor.fontFamily": "JetbrainsMono Nerd Font Mono",
 	//"editor.fontFamily": "ComicShannsMono Nerd Font",
-	"editor.fontFamily": "FiraCode Nerd Font",
-	//"editor.fontFamily": "Hack Nerd Font Mono",
-	//"editor.fontFamily": "Iosevka Nerd Font",
-	//"editor.fontFamily": "JetbrainsMono Nerd Font Mono",
-	//"editor.fontFamily": "Monaspace Argon",
-	//"editor.fontFamily": "Monaspace Krypton",
 	//"editor.fontFamily": "Monaspace Radon",
-	//"editor.fontFamily": "OpenDyslexicM Nerd Font Mono",
+	//"editor.fontFamily": "Iosevka Nerd Font",
 
 	"editor.fontVariations": true,
 	"editor.inlineSuggest.fontFamily": "Monaspace Krypton",
@@ -50,12 +44,13 @@
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.tree.enableStickyScroll": true,
 	"window.titleBarStyle": "custom",
+	"workbench.editor.openPositioning": "last", //open new tabs at the very end
 	"workbench.colorCustomizations": {
 		"terminal.background": "#00000000"
 	},
 
 	//!Terminal Settings
-	"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+	"terminal.integrated.fontFamily": "Monaspace Krypton",
 	"terminal.integrated.fontWeight": "bold",
 	"terminal.integrated.fontSize": 13,
 	"terminal.external.osxExec": "Warp.app",
