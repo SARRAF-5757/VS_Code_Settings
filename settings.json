@@ -14,7 +14,7 @@
 	"editor.guides.bracketPairsHorizontal": true,
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.multiCursorModifier": "ctrlCmd",
-	//"editor.accessibilitySupport": "off",
+	"editor.accessibilitySupport": "off",
 	"editor.inlineSuggest.suppressSuggestions": true,
 
 	//!Workbench Appearance
@@ -179,6 +179,5 @@
 	"breadcrumbs.enabled": false, //easier navigation
 	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
 	"security.workspace.trust.untrustedFiles": "open",
-	"editor.accessibilitySupport": "off",
 	"arduino.path": "/Applications",
 }
