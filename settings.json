@@ -270,10 +270,11 @@
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
-		"editor.autoIndent": "full",
 	},
+	"editor.autoIndent": "full",
 	"C_Cpp.formatting": "vcFormat",
 	"editor.tabSize": 4,
+	"editor.insertSpaces": true,
 	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine", 	//brace for function
 	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine", 	//brace for conditions
 	"C_Cpp.vcFormat.indent.braces": true,							//keep indent function	
