@@ -13,7 +13,7 @@
 	"editor.inlineSuggest.fontFamily": "Monaspace Krypton",
 	"editor.fontLigatures": true,
 	//"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'", //for Monaspace
-	"editor.wordWrapColumn": 90, //wraps code after 90 characters
+	"editor.wordWrapColumn": 90,
 	"editor.rulers": [90],
 	"editor.smoothScrolling": false,
 	"editor.minimap.autohide": true,
@@ -157,24 +157,37 @@
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.integrated.shell.osx": "zsh",
 
+	//!Dictionary
+	"cSpell.userWords": ["EECS"],
+
 	//!Sync between profiles
 	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations", "workbench.colorTheme", "workbench.iconTheme", "workbench.productIconTheme", "editor.fontFamily", "editor.fontSize", "editor.fontLigatures", "editor.cursorSmoothCaretAnimation", "window.titleBarStyle", "editor.rulers", "editor.wordWrapColumn", "editor.minimap.autohide", "editor.minimap.renderCharacters", "workbench.tree.renderIndentGuides", "workbench.tree.enableStickyScroll"],
 
 	//*--------------------EXTENSIONS--------------------*//
 
-	//!Dictionary
-	"cSpell.userWords": ["EECS"],
-
-	//!Formatting and Linting
-	"editor.defaultFormatter": null, //"esbenp.prettier-vscode",
+	//!General Formatting
+	"editor.defaultFormatter": "esbenp.prettier-vscode", //"esbenp.prettier-vscode",
 	"editor.formatOnPaste": true,
-	//"prettier.useTabs": true,
-	//"prettier.experimentalTernaries": true,
-	//"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
+	"prettier.useTabs": true,
+	"editor.tabSize": 4,
+	"prettier.experimentalTernaries": true,
+	"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
 	"better-comments.highlightPlainText": true,
+
+	//!Error Lens
+	"errorLens.codeLensTemplate": "$severity $message$source",
+	"errorLens.enabledDiagnosticLevels": ["error" /*"warning", "hint", "info"*/],
+	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
+
+	//!GitLens
+	"gitlens.currentLine.fontSize": 10,
+	"gitlens.currentLine.fontFamily": "Monaspace Krypton",
+	"gitlens.plusFeatures.enabled": false,
+	"gitlens.hovers.enabled": false,
+	"gitlens.codeLens.enabled": false,
 
 	//!Indent-coloring
 	"indentRainbow.lightIndicatorStyleLineWidth": 6,
@@ -238,13 +251,6 @@
 		}
 	],
 
-	//!GitLens
-	"gitlens.currentLine.fontSize": 10,
-	"gitlens.currentLine.fontFamily": "Monaspace Krypton",
-	"gitlens.plusFeatures.enabled": false,
-	"gitlens.hovers.enabled": false,
-	"gitlens.codeLens.enabled": false,
-
 	//!Extra Theme Settings
 	"vscode_vibrancy.opacity": 1,
 
@@ -261,35 +267,24 @@
 
 	//!C/C++ Settings
 	"C_Cpp.intelliSenseEngine": "disabled", //disable intellisense for c++ and use clang
-	"C_Cpp.default.cppStandard": "c++17", //IntelliSense
+	"C_Cpp.default.cppStandard": "c++17",
 	"cmake.configureOnOpen": true,
 	"makefile.configureOnOpen": true,
-	//!C++ Code Formatting
+	//?C++ Code Formatting
 	"[cpp]": {
-		"editor.defaultFormatter": "ms-vscode.cpptools",
+		"editor.defaultFormatter": "xaver.clang-format",
 		"editor.formatOnPaste": true,
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
+		//"editor.formatOnSave": true,
+		"editor.autoIndent": "full",
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
 	},
-	"editor.autoIndent": "full",
-	"C_Cpp.formatting": "vcFormat",
-	"editor.tabSize": 4,
-	"editor.insertSpaces": true,
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine", 	//brace for function
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine", 	//brace for conditions
-	"C_Cpp.vcFormat.indent.braces": true,							//keep indent function	
-	"C_Cpp.vcFormat.indent.preserveWithinParentheses": true,		//keep indent parenthesis
-	"C_Cpp.vcFormat.newLine.beforeElse": false,						//keep } else {
-	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,//empty function{}
-	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,	//empty struct
-	"C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,//empty space between closings </
-	"C_Cpp.vcFormat.space.betweenEmptyBraces": true,
-	"C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
-	"C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
+	"C_Cpp.formatting": "clangFormat",
+	"clang-format.fallbackStyle": "Google",
+	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
 
 	//!General
 	"breadcrumbs.enabled": false, //easier navigation
-	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
 	"security.workspace.trust.untrustedFiles": "open",
-	"arduino.path": "/Applications",
+	"arduino.path": "/Applications"
 }
