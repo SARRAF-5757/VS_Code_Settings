@@ -153,7 +153,7 @@
 	//!Terminal Settings
 	"terminal.integrated.fontFamily": "Monaspace Krypton",
 	"terminal.integrated.fontWeight": "bold",
-	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.fontSize": 11,
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.integrated.shell.osx": "zsh",
 
