@@ -280,7 +280,7 @@
 		"editor.tabSize": 4
 	},
 	"C_Cpp.formatting": "clangFormat",
-	"clang-format.fallbackStyle": "Google",
+	"clang-format.fallbackStyle": "Mozilla",
 	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
 
 	//!General
