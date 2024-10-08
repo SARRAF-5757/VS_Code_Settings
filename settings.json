@@ -280,11 +280,11 @@
 		"editor.tabSize": 4
 	},
 	"C_Cpp.formatting": "clangFormat",
-	"clang-format.fallbackStyle": "Mozilla",
+	"clang-format.fallbackStyle": "LLVM",
 	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
 
 	//!General
 	"breadcrumbs.enabled": false, //easier navigation
 	"security.workspace.trust.untrustedFiles": "open",
-	"arduino.path": "/Applications"
+	"arduino.path": "/Applications",
 }
