@@ -199,6 +199,13 @@
 	"clang-format.fallbackStyle": "LLVM",
 	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
 	
+	//!Custom CSS for VS Code
+	"vscode_custom_css.imports": [
+		"file:///Users/sarraf/Library/Application Support/Code/User/custom-vscode.css",
+		"file:///Users/sarraf/Library/Application Support/Code/User/vscode-blur-script.js"
+
+	],
+	
 	//!GitLens
 	"gitlens.currentLine.fontSize": 10,
 	"gitlens.currentLine.fontFamily": "Monaspace Krypton",
@@ -305,5 +312,8 @@
 											"editor.minimap.autohide", 
 											"editor.minimap.renderCharacters", 
 											"workbench.tree.renderIndentGuides", 
-											"workbench.tree.enableStickyScroll"],
+											"workbench.tree.enableStickyScroll"
+										],
+										"git.openRepositoryInParentFolders": "always",
+										"editor.stickyScroll.enabled": false,
 }
