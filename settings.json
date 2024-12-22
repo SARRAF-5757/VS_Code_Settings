@@ -1,30 +1,38 @@
 {
 	// cspell:disable
-	//*--------------------APPEARANCE--------------------*//
-
+	
+	//*--------------------NATIVE SETTINGS--------------------*//
+	
 	//!Editor Settings
 	"editor.fontSize": 14,
 	"editor.fontFamily": "JetbrainsMono Nerd Font Mono",
 	//"editor.fontFamily": "ComicShannsMono Nerd Font",
 	//"editor.fontFamily": "Monaspace Radon",
 	//"editor.fontFamily": "Iosevka Nerd Font",
-
 	"editor.fontVariations": true,
 	"editor.inlineSuggest.fontFamily": "Monaspace Krypton",
 	"editor.fontLigatures": true,
 	//"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'", //for Monaspace
+	
+	"editor.defaultFormatter": "esbenp.prettier-vscode", //"esbenp.prettier-vscode",
+	"editor.formatOnPaste": false,
+	"editor.tabSize": 4,
 	"editor.wordWrapColumn": 90,
-	"editor.rulers": [90],
-	"editor.smoothScrolling": false,
-	"editor.minimap.autohide": true,
-	"editor.minimap.renderCharacters": false,
-	"editor.guides.bracketPairs": "active",
-	"editor.guides.bracketPairsHorizontal": true,
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.multiCursorModifier": "alt",
-	"editor.accessibilitySupport": "off",
-	"editor.inlineSuggest.suppressSuggestions": true,
-	"editor.tokenColorCustomizations": { //to disable italics
+	//"editor.rulers": [90],
+	"editor.smoothScrolling": false,					//makes scrolling per line
+	"editor.cursorSmoothCaretAnimation": "on",			//makes cursor's movement smooth
+	"editor.minimap.enabled": false,					//enable/disable minimal (customize below ↓)
+	//"editor.minimap.autohide": true,
+	//"editor.minimap.renderCharacters": false,
+	"editor.guides.bracketPairs": "active",				//enable current bracket highlighting
+	"editor.multiCursorModifier": "alt",				//modifier key
+	"editor.inlineSuggest.suppressSuggestions": true,	//suggestions are hidden until hover
+	"editor.selectionHighlight": false,					//stop highlighting every instance of selected word
+	"editor.occurrencesHighlight": "off",				//stop highlighting every instance of the symbol under cursor
+	"editor.renderLineHighlight": "none",				//stop highlighting the cursor line
+	"editor.accessibilitySupport": "off",				//annoying screen reader popup
+	"editor.tokenColorCustomizations": {
+		//to disable italics
 		"textMateRules": [
 			{
 				"scope": [
@@ -135,65 +143,81 @@
 			}
 		]
 	},
-
-	//!Workbench Appearance
+	
+	//!Workbench Settings
+	"window.titleBarStyle": "custom",
 	"workbench.colorTheme": "Catppuccin Mocha",
 	"workbench.iconTheme": "catppuccin-mocha",
 	"workbench.productIconTheme": "material-product-icons",
-	"workbench.layoutControl.enabled": false, //to hide the top bar
-	"window.commandCenter": false, //to hide the other top bar
-	"workbench.tree.renderIndentGuides": "always",
-	"workbench.tree.enableStickyScroll": true,
-	"window.titleBarStyle": "custom",
-	"workbench.editor.openPositioning": "last", //open new tabs at the very end
+	"window.commandCenter": false, 						//hide the top bar
+	"workbench.layoutControl.enabled": false, 			//hide the other top bar
+	"workbench.statusBar.visible": false, 				//hide bottom statusbar
+	"breadcrumbs.enabled": false, 						//hide file path on the top
+	"workbench.tree.renderIndentGuides": "always",		//indent guides for functions
+	"workbench.tree.enableStickyScroll": true, 			//sticky function headers
+	"workbench.editor.openPositioning": "last", 		//open new tabs at the very end
+	"workbench.tips.enabled": false,					//disable bulb in IDE
+	"workbench.startupEditor": "none",					//prevent welcome or any editor from launching
+	"scm.diffDecorations": "none", 						//disable git's added/deleted/modified colorsw
 	"workbench.colorCustomizations": {
 		"terminal.background": "#00000000"
 	},
-
+	
 	//!Terminal Settings
 	"terminal.integrated.fontFamily": "Monaspace Krypton",
 	"terminal.integrated.fontWeight": "bold",
 	"terminal.integrated.fontSize": 11,
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.integrated.shell.osx": "zsh",
-
-	//!Dictionary
-	"cSpell.userWords": ["EECS"],
-
-	//!Sync between profiles
-	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations", "workbench.colorTheme", "workbench.iconTheme", "workbench.productIconTheme", "editor.fontFamily", "editor.fontSize", "editor.fontLigatures", "editor.cursorSmoothCaretAnimation", "window.titleBarStyle", "editor.rulers", "editor.wordWrapColumn", "editor.minimap.autohide", "editor.minimap.renderCharacters", "workbench.tree.renderIndentGuides", "workbench.tree.enableStickyScroll"],
-
-	//*--------------------EXTENSIONS--------------------*//
-
-	//!General Formatting
-	"editor.defaultFormatter": "esbenp.prettier-vscode", //"esbenp.prettier-vscode",
-	"editor.formatOnPaste": true,
-	"prettier.useTabs": true,
-	"editor.tabSize": 4,
-	"prettier.experimentalTernaries": true,
-	"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
-	"extensions.experimental.affinity": {
-		"asvetliakov.vscode-neovim": 1
+	
+	//!File Handling
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 100,
+	"files.autoSaveWhenNoErrors": true,
+	"explorer.confirmDelete": false,
+	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
+	"projectManager.groupList": true,
+	"projectManager.showParentFolderInfoOnDuplicates": true,
+	
+	//*--------------------EXTENSION SETTINGS--------------------*//
+	
+	//!C/C++ Settings
+	"C_Cpp.intelliSenseEngine": "disabled", //disable intellisense for c++ and use clang
+	"C_Cpp.default.cppStandard": "c++17",
+	"cmake.configureOnOpen": true,
+	"makefile.configureOnOpen": true,
+	//?C++ Code Formatting
+	"[cpp]": {
+		"editor.defaultFormatter": "xaver.clang-format",
+		"editor.formatOnPaste": true,
+		//"editor.formatOnSave": true,
+		"editor.autoIndent": "full",
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
 	},
-	"better-comments.highlightPlainText": true,
-
-	//!Error Lens
-	"errorLens.codeLensTemplate": "$severity $message$source",
-	"errorLens.enabledDiagnosticLevels": ["error" /*"warning", "hint", "info"*/],
-	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
-
+	"C_Cpp.formatting": "clangFormat",
+	"clang-format.fallbackStyle": "LLVM",
+	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
+	
 	//!GitLens
 	"gitlens.currentLine.fontSize": 10,
 	"gitlens.currentLine.fontFamily": "Monaspace Krypton",
 	"gitlens.plusFeatures.enabled": false,
 	"gitlens.hovers.enabled": false,
 	"gitlens.codeLens.enabled": false,
-
+	
+	//!Prettier
+	"prettier.useTabs": true,
+	"prettier.experimentalTernaries": true,
+	"prettier.printWidth": 1000, //so that code doesn't wrap arround annoyingly
+	
 	//!Indent-coloring
 	"indentRainbow.lightIndicatorStyleLineWidth": 6,
 	"indentRainbow.indicatorStyle": "light",
 	"indentRainbow.colors": ["rgba(255,255,64,0.07)", "rgba(127,255,127,0.07)", "rgba(255,127,255,0.07)", "rgba(79,236,236,0.07)"],
-
+	
+	//!Better Comments
+	"better-comments.highlightPlainText": true,
 	"better-comments.tags": [
 		{
 			"tag": "//",
@@ -250,41 +274,36 @@
 			"italic": false
 		}
 	],
-
-	//!Extra Theme Settings
-	"vscode_vibrancy.opacity": 1,
-
-	//*--------------------FUNCTIONALITY--------------------*//
-
-	//!File Handling
-	"files.autoSave": "afterDelay",
-	"files.autoSaveDelay": 100,
-	"files.autoSaveWhenNoErrors": true,
-	"explorer.confirmDelete": false,
-	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
-	"projectManager.groupList": true,
-	"projectManager.showParentFolderInfoOnDuplicates": true,
-
-	//!C/C++ Settings
-	"C_Cpp.intelliSenseEngine": "disabled", //disable intellisense for c++ and use clang
-	"C_Cpp.default.cppStandard": "c++17",
-	"cmake.configureOnOpen": true,
-	"makefile.configureOnOpen": true,
-	//?C++ Code Formatting
-	"[cpp]": {
-		"editor.defaultFormatter": "xaver.clang-format",
-		"editor.formatOnPaste": true,
-		//"editor.formatOnSave": true,
-		"editor.autoIndent": "full",
-		"editor.insertSpaces": false,
-		"editor.tabSize": 4
+	
+	//!Error Lens
+	"errorLens.codeLensTemplate": "$severity $message$source",
+	"errorLens.enabledDiagnosticLevels": ["error" /*"warning", "hint", "info"*/],
+	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
+		
+	//!Dictionary
+	"cSpell.userWords": ["EECS"],
+	
+	//!Miscellanies
+	"extensions.experimental.affinity": {				//performance improvement (?)
+		"asvetliakov.vscode-neovim": 1
 	},
-	"C_Cpp.formatting": "clangFormat",
-	"clang-format.fallbackStyle": "LLVM",
-	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
-
-	//!General
-	"breadcrumbs.enabled": false, //easier navigation
 	"security.workspace.trust.untrustedFiles": "open",
-	"arduino.path": "/Applications",
+	"vscode_vibrancy.opacity": 1,						//vibrancy theme
+	
+	//!Sync between profiles
+	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations",
+											"workbench.colorTheme", 
+											"workbench.iconTheme", 
+											"workbench.productIconTheme", 
+											"editor.fontFamily", 
+											"editor.fontSize", 
+											"editor.fontLigatures", 
+											"editor.cursorSmoothCaretAnimation", 
+											"window.titleBarStyle", 
+											"editor.rulers", 
+											"editor.wordWrapColumn", 
+											"editor.minimap.autohide", 
+											"editor.minimap.renderCharacters", 
+											"workbench.tree.renderIndentGuides", 
+											"workbench.tree.enableStickyScroll"],
 }
