@@ -1,6 +1,4 @@
-{
-	// cspell:disable
-	
+{	// cspell:disable
 	//*--------------------NATIVE SETTINGS--------------------*//
 	
 	//!Editor Settings
@@ -19,6 +17,7 @@
 	"editor.tabSize": 4,
 	"editor.wordWrapColumn": 90,
 	//"editor.rulers": [90],
+	"editor.stickyScroll.enabled": false,				//sticky function headers
 	"editor.smoothScrolling": false,					//makes scrolling per line
 	"editor.cursorSmoothCaretAnimation": "on",			//makes cursor's movement smooth
 	"editor.minimap.enabled": false,					//enable/disable minimal (customize below ↓)
@@ -160,13 +159,13 @@
 	"workbench.startupEditor": "none",					//prevent welcome or any editor from launching
 	"scm.diffDecorations": "none", 						//disable git's added/deleted/modified colorsw
 	"workbench.colorCustomizations": {
-		"terminal.background": "#00000000"
+		"terminal.background": "#00000000",
 	},
-	
-	//!Terminal Settings
-	"terminal.integrated.fontFamily": "Monaspace Krypton",
+		//?Terminal Settings
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"terminal.integrated.cursorStyle":"line",
 	"terminal.integrated.fontWeight": "bold",
-	"terminal.integrated.fontSize": 11,
+	"terminal.integrated.fontSize": 12,
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.integrated.shell.osx": "zsh",
 	
@@ -175,9 +174,15 @@
 	"files.autoSaveDelay": 100,
 	"files.autoSaveWhenNoErrors": true,
 	"explorer.confirmDelete": false,
-	"projectManager.git.baseFolders": ["/Users/sarraf/Coding"],
+	"projectManager.git.baseFolders": [
+		"/Users/sarraf/Library/Application Support/Code/User",
+		"/Users/sarraf/Coding/EECS280",
+		"/Users/sarraf/Coding/EECS281",
+		"/Users/sarraf/Coding/GItHub"
+	],
 	"projectManager.groupList": true,
 	"projectManager.showParentFolderInfoOnDuplicates": true,
+	"git.openRepositoryInParentFolders": "always",
 	
 	//*--------------------EXTENSION SETTINGS--------------------*//
 	
@@ -203,7 +208,6 @@
 	"vscode_custom_css.imports": [
 		"file:///Users/sarraf/Library/Application Support/Code/User/custom-vscode.css",
 		"file:///Users/sarraf/Library/Application Support/Code/User/vscode-blur-script.js"
-
 	],
 	
 	//!GitLens
@@ -290,13 +294,6 @@
 	//!Dictionary
 	"cSpell.userWords": ["EECS"],
 	
-	//!Miscellanies
-	"extensions.experimental.affinity": {				//performance improvement (?)
-		"asvetliakov.vscode-neovim": 1
-	},
-	"security.workspace.trust.untrustedFiles": "open",
-	"vscode_vibrancy.opacity": 1,						//vibrancy theme
-	
 	//!Sync between profiles
 	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations",
 											"workbench.colorTheme", 
@@ -314,6 +311,10 @@
 											"workbench.tree.renderIndentGuides", 
 											"workbench.tree.enableStickyScroll"
 										],
-										"git.openRepositoryInParentFolders": "always",
-										"editor.stickyScroll.enabled": false,
+	//!Miscellanies
+	"extensions.experimental.affinity": {				//performance improvement (?)
+	"asvetliakov.vscode-neovim": 1
+	},
+	"security.workspace.trust.untrustedFiles": "open",
+	"vscode_vibrancy.opacity": 1,						//vibrancy theme
 }
