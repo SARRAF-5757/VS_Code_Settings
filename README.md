@@ -1,6 +1,6 @@
-##Extensions and Fonts Required to Run this Setup-
+## Extensions and Fonts Required to Run this Setup-
 
-###Extensions-
+### Extensions-
 * C/C++
 * clangd
 * GitLens
@@ -10,7 +10,7 @@
 * Monokai Pro File Icons
 * Material Product Icon
 
-###Fonts
+### Fonts
 * JetBrains Mono Nerd Fonts
 * Monaspace Radon
 * Monaspace Krypton
