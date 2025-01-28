@@ -177,8 +177,9 @@
 	"explorer.confirmDelete": false,
 	"projectManager.git.baseFolders": [
 		"/Users/sarraf/Library/Application Support/Code/User",
-		"/Users/sarraf/Coding/EECS280",
-		"/Users/sarraf/Coding/EECS281",
+		//"/Users/sarraf/Coding/EECS280",
+		//"/Users/sarraf/Coding/EECS281",
+		"/Users/sarraf/Coding/EECS370",
 		"/Users/sarraf/Coding/EECS485",
 		"/Users/sarraf/Coding/GItHub"
 	],
@@ -205,6 +206,16 @@
 	"C_Cpp.formatting": "clangFormat",
 	"clang-format.fallbackStyle": "LLVM",
 	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["readability-magic-numbers", "cppcoreguidelines-avoid-magic-numbers"],
+
+	//!LC2K settings [EECS 370]
+	"[lc2k]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 8,
+		"editor.autoIndent": "advanced",
+		"editor.formatOnSave": true,
+		"files.trimFinalNewlines": true,
+		"files.insertFinalNewline": true
+	},
 	
 	//!Custom CSS for VS Code
 	"vscode_custom_css.imports": [
