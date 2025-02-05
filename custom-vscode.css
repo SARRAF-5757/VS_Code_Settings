@@ -49,10 +49,10 @@
         opacity: 1 !important;
     }
     
-    /* File explorer action buttons */
+    /* File explorer action buttons /
     .monaco-workbench .part.sidebar .title-actions .actions-container {
         display: none;
-    }
+    }*/
     
     /* File Explorer Item Label */
     .monaco-tree .monaco-tree-row .label-name,

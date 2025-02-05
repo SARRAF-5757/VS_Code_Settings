@@ -9,6 +9,7 @@
 * Catppuccin Theme
 * Monokai Pro File Icons
 * Material Product Icon
+* Custom CSS and JS Loader
 
 ### Fonts
 * JetBrains Mono Nerd Fonts
