@@ -1,7 +1,8 @@
 /*! Code comment style */
     .mtk3 {
         font-family: 'Monaspace Radon', monospace !important;
-        color: #008c7d !important;
+        font-style: italic;
+        color: #747495 !important;
     }
     .line-numbers {
         position: relative !important;
@@ -9,6 +10,12 @@
         font-size: 14px !important;
         font-family: 'Monaspace Neon' !important;
         opacity: .3;
+    }
+
+/*! Code elements */
+    /* String */
+    .mtk4 {
+        color: #94d6cb !important;
     }
     
 /*! Shadows */
