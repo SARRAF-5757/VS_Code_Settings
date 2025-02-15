@@ -115,15 +115,6 @@
 		"file:///Users/sarraf/Library/Application Support/Code/User/custom-vscode.css",
 		"file:///Users/sarraf/Library/Application Support/Code/User/vscode-blur-script.js"
 	],
-
-	//!Custom UI Style
-	"custom-ui-style.electron": {
-		"titleBarStyle": "hiddenInset",
-		"trafficLightPosition": {
-			"x": 20,
-			"y": 16
-		}
-	},
 	
 	//!GitLens
 	"gitlens.currentLine.fontSize": 10,

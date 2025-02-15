@@ -44,10 +44,10 @@
 /*! File explorer */
     /* File Explorer Selected Item */
     .monaco-list.list_id_1 .monaco-list-row.selected {
-        background-color: #5a4f71 !important;
+        background-color: #463c5b9d !important;
         opacity: 1 !important;
-        border-top: 1px #5a4f71 solid;
-        border-bottom: 1px #5a4f71 solid;
+        border-top: 1px #5a4f7100 solid;
+        border-bottom: 1px #5a4f7100 solid;
     }
     
     /* List item label name */
@@ -67,8 +67,8 @@
     .monaco-icon-label .label-name {
         font-family: 'Monaspace Neon', monospace !important;
         font-size: 13px !important;
-        font-weight: 400 !important;
-        color: #faf3ff !important;
+        font-weight: 600 !important;
+        color: #CDD6F4 !important;
     }
     
 /*! Sidebar title */
@@ -86,9 +86,6 @@
         color: #CBA6F7 !important;
     }
     .scroll-decoration {            /* disable top shadow */
-        display: none !important;
-    }
-    .title-actions {                /* three dot menu in file explorer */
         display: none !important;
     }
 
