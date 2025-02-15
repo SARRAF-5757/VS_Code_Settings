@@ -37,8 +37,8 @@
 	//!Workbench Settings
 	"window.titleBarStyle": "custom",
 	"workbench.colorTheme": "Catppuccin Mocha",
-	"workbench.iconTheme": "catppuccin-mocha",
-	"workbench.productIconTheme": "material-product-icons",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.productIconTheme": "material-product-icons", //Put sidebar on the right
 	"window.commandCenter": false, 						//hide the top bar
 	"workbench.layoutControl.enabled": false, 			//hide the other top bar
 	"workbench.statusBar.visible": false, 				//hide bottom statusbar
@@ -53,7 +53,8 @@
 	"workbench.colorCustomizations": {
 		"terminal.background": "#00000000",
 	},
-		//?Terminal Settings
+	
+	//!Terminal Settings
 	"terminal.integrated.fontFamily": "MesloLGS NF",
 	"terminal.integrated.cursorStyle":"line",
 	"terminal.integrated.fontWeight": "bold",
@@ -65,7 +66,8 @@
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 100,
 	"files.autoSaveWhenNoErrors": true,
-	"explorer.confirmDelete": false,
+	"explorer.confirmDelete": false,					//delete confirmation disables
+	//"explorer.decorations.badges": false,				//disable change/error indicators in file explorer
 	"projectManager.git.baseFolders": [
 		"/Users/sarraf/Library/Application Support/Code/User",
 		"/Users/sarraf/Coding/Personal",
@@ -113,6 +115,15 @@
 		"file:///Users/sarraf/Library/Application Support/Code/User/custom-vscode.css",
 		"file:///Users/sarraf/Library/Application Support/Code/User/vscode-blur-script.js"
 	],
+
+	//!Custom UI Style
+	"custom-ui-style.electron": {
+		"titleBarStyle": "hiddenInset",
+		"trafficLightPosition": {
+			"x": 20,
+			"y": 16
+		}
+	},
 	
 	//!GitLens
 	"gitlens.currentLine.fontSize": 10,
@@ -135,6 +146,10 @@
 		"markdown",
 		"python"
 	],
+
+	//!File icon theme tweaks
+	"material-icon-theme.hidesExplorerArrows": true,
+	"catppuccin-icons.hidesExplorerArrows": true,
 	
 	//!Better Comments
 	"better-comments.highlightPlainText": true,
@@ -199,6 +214,18 @@
 	"errorLens.codeLensTemplate": "$severity $message$source",
 	"errorLens.enabledDiagnosticLevels": ["error" /*"warning", "hint", "info"*/],
 	"codeium.enableCodeLens": "hide_x", // Hides the CodeLens for Codeium extension.
+
+	//!VSCord (Catppuccin Mocha theme)
+	"vscord.status.image.large.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
+	"vscord.status.image.large.editing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
+	"vscord.status.image.large.idle.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
+	"vscord.status.image.large.notInFile.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
+	"vscord.status.image.large.viewing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
+	"vscord.status.image.small.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
+	"vscord.status.image.small.editing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
+	"vscord.status.image.small.idle.key": "https://vscord.catppuccin.com/mocha/idle.webp",
+	"vscord.status.image.small.notInFile.key": "https://vscord.catppuccin.com/mocha/idle.webp",
+	"vscord.status.image.small.viewing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
 		
 	//!Dictionary
 	"cSpell.userWords": ["EECS"],
@@ -338,4 +365,5 @@
 			}
 		]
 	},
+	"workbench.sideBar.location": "right",
 }

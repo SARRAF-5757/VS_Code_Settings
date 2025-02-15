@@ -41,7 +41,7 @@
         display: none !important;
     }
     
-/*! Left side file explorer */
+/*! File explorer */
     /* File Explorer Selected Item */
     .monaco-list.list_id_1 .monaco-list-row.selected {
         background-color: #5a4f71 !important;
@@ -79,16 +79,17 @@
         justify-items: center !important;
     }
     .composite.title h2 {
+        font-family: "Monaspace Radon";
         font-weight: bold !important;
         font-size: 12px !important;
         text-transform: uppercase;
-        color: #bc9abc !important;
+        color: #CBA6F7 !important;
     }
-    .composite.title h2::before {
-        display: inline-block;
-        margin-right: 6px;
-        font-size: 1.1rem;
-        content: '♾️';
+    .scroll-decoration {            /* disable top shadow */
+        display: none !important;
+    }
+    .title-actions {                /* three dot menu in file explorer */
+        display: none !important;
     }
 
 /*! Scroll Bar */
